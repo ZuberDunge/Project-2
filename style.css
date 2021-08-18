@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 2rem;
+    padding: 2rem;
+    
+    
+}
+
+.heading{
+    font-size: 4rem;
+    /* float: left;
+ */}
+
+.header{
+    padding: 4rem 25rem 2rem 25rem;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.add-list{
+    /* float: right; */
+    font-size: 2.5rem;
+}
+.icon-style{
+    color: orangered;
+    cursor: pointer;
+}
+
+.boxes{
+    padding: 3rem 0rem 4rem 0rem; 
+    display: flex;
+    margin: auto;
+      
+    width: 80%;
+    justify-content: center;      
+}
+
+.box{
+    height: 380px;
+    width: 250px;
+    border: 2px solid orangered;
+    border-radius: 0.5rem;    
+    margin: 3rem;  
+    box-shadow: 10px 10px 10px #0a0a0a29;
+     
+    
+}
+
+.subhead{
+    text-align: center;
+    color: orangered;
+    font-weight: lighter;
+
+}
+
+.completed{
+    text-decoration: line-through;  
+    font-weight: bold;
+    text-align: right;
+    padding: 20px;
+    color: orangered;
+}
+
+.checkbox{
+    text-align: center;
+   
+}
+.mainheading{
+    font-weight:1rem
+}
+
+.container{
+    text-align: center;
+    
+}
+
+.triptoparis{
+    font-size:4rem ;
+    font-weight: 900;
+    margin: auto;
+    
+    width: 80%;
+}
+
+.back-opt{
+    padding: 25px;
+    /* float: right; */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-main{
+
+    height: 400px;
+    width: 400px;
+    border: 2px solid olivedrab;
+    border-radius: 0.5rem;    
+    margin: 3rem 0 0 0;  
+    box-shadow: 10px 10px 10px #0a0a0a29; 
+    text-align: center;
+    margin: auto;
+}
+
+.completed2{
+    text-decoration: line-through;  
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: orangered;
+}
+
+.icon-style-2{
+    color: orangered;
+    cursor: pointer;
+    margin-top: 8rem;
+    margin-left: 20rem;
+    font-size: 2.5rem;
+}
+
+.box-item-add{
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    right: 35%;
+    width: 450px;
+    height: 220px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px #0a0a0a29;
+    border: 1px solid #e74c3c;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1rem;
+    backdrop-filter: blur(5px);  
+}
+
+.subheading{
+    text-align: center;
+    color: orangered;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+
+}
+
+.new-item-input{
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    width: 300px;
+}
+.input-box{
+    margin-top: 1rem;
+    height: 40px;
+    width: 300px;
+    box-shadow: 5px 5px 5px #0a0a0a29;
+    border: 1px solid #e74c3c;
+    border-radius: 0.5rem;
+}
+
+.add-btn{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: orangered;
+    border-radius: 1rem;
+    color: white;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.blur{
+    filter: blur(5px);
+}
