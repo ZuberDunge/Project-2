@@ -83,8 +83,9 @@ body{
     font-size:4rem ;
     font-weight: 900;
     margin: auto;
-    
+    text-align: center;
     width: 80%;
+    position: relative;
 }
 
 .back-opt{
@@ -124,7 +125,7 @@ body{
 }
 
 .box-item-add{
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 35%;
     right: 35%;
@@ -182,3 +183,24 @@ body{
 .blur{
     filter: blur(8px);
 }
+
+.triptoparis:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #e74c3c;
+    left: 20%;
+    top: 50%;
+    position: absolute;
+  }
+ .triptoparis:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #e74c3c;
+    right: 20%;
+    top: 50%;
+    position: absolute;
+  }
