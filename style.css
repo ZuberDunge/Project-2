@@ -1,86 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
     margin: 2rem;
     padding: 2rem;
-    
-    
+
+
 }
 
-.heading{
+.heading {
     font-size: 4rem;
     /* float: left;
- */}
+ */
+}
 
-.header{
-    padding: 4rem 25rem 2rem 25rem;    
+.header {
+    padding: 4rem 0rem 2rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+
 }
 
-.add-list{
+.add-list {
     /* float: right; */
     font-size: 2.5rem;
 }
-.icon-style{
+
+.icon-style {
     color: orangered;
     cursor: pointer;
 }
 
-.boxes{
-    padding: 3rem 0rem 4rem 0rem; 
+.boxes {
+    padding: 3rem 0rem 4rem 0rem;
     display: flex;
     margin: auto;
-      
+
     width: 80%;
-    justify-content: center;      
+    justify-content: center;
 }
 
-.box{
+.box {
     height: 380px;
     width: 250px;
     border: 2px solid orangered;
-    border-radius: 0.5rem;    
-    margin: 3rem;  
+    border-radius: 0.5rem;
+    margin: 3rem;
     box-shadow: 10px 10px 10px #0a0a0a29;
-     
-    
+
+
 }
 
-.subhead{
+.subhead {
     text-align: center;
     color: orangered;
     font-weight: lighter;
 
 }
 
-.completed{
-    text-decoration: line-through;  
+.completed {
+    text-decoration: line-through;
     font-weight: bold;
     text-align: right;
     padding: 20px;
     color: orangered;
 }
 
-.checkbox{
+.checkbox {
     text-align: center;
-   
-}
-.mainheading{
-    font-weight:1rem
+
 }
 
-.container{
-    text-align: center;
-    
+.mainheading {
+    font-weight: 1rem
 }
 
-.triptoparis{
-    font-size:4rem ;
+.container {
+    text-align: center;
+
+}
+
+.triptoparis {
+    font-size: 4rem;
     font-weight: 900;
     margin: auto;
     text-align: center;
@@ -88,7 +94,7 @@ body{
     position: relative;
 }
 
-.back-opt{
+.back-opt {
     padding: 25px;
     /* float: right; */
     font-size: 2rem;
@@ -96,27 +102,27 @@ body{
     text-align: center;
 }
 
-.box-main{
+.box-main {
 
     height: 400px;
     width: 400px;
     border: 2px solid olivedrab;
-    border-radius: 0.5rem;    
-    margin: 3rem 0 0 0;  
-    box-shadow: 10px 10px 10px #0a0a0a29; 
+    border-radius: 0.5rem;
+    margin: 3rem 0 0 0;
+    box-shadow: 10px 10px 10px #0a0a0a29;
     text-align: center;
     margin: auto;
 }
 
-.completed2{
-    text-decoration: line-through;  
+.completed2 {
+    text-decoration: line-through;
     font-weight: bold;
     text-align: center;
     padding: 20px;
     color: orangered;
 }
 
-.icon-style-2{
+.icon-style-2 {
     color: orangered;
     cursor: pointer;
     margin-top: 8rem;
@@ -124,7 +130,7 @@ body{
     font-size: 2.5rem;
 }
 
-.box-item-add{
+.box-item-add {
     position: absolute;
     top: 30%;
     left: 35%;
@@ -137,10 +143,10 @@ body{
     border-radius: 10px;
     margin: auto;
     padding: 1rem;
-    backdrop-filter: blur(5px);  
+    backdrop-filter: blur(5px);
 }
 
-.subheading{
+.subheading {
     text-align: center;
     color: orangered;
     font-size: 1.5rem;
@@ -149,13 +155,14 @@ body{
 
 }
 
-.new-item-input{
+.new-item-input {
     margin: auto;
     text-align: center;
     height: 50px;
     width: 300px;
 }
-.input-box{
+
+.input-box {
     margin-top: 1rem;
     height: 40px;
     width: 300px;
@@ -164,7 +171,7 @@ body{
     border-radius: 0.5rem;
 }
 
-.add-btn{
+.add-btn {
     margin-top: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
@@ -180,7 +187,7 @@ body{
     cursor: pointer;
 }
 
-.blur{
+.blur {
     filter: blur(8px);
 }
 
@@ -193,8 +200,9 @@ body{
     left: 20%;
     top: 50%;
     position: absolute;
-  }
- .triptoparis:after {
+}
+
+.triptoparis:after {
     content: "";
     display: block;
     width: 200px;
@@ -203,4 +211,31 @@ body{
     right: 20%;
     top: 50%;
     position: absolute;
-  }
+}
+
+.page-change{
+   
+    margin: auto;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    background-color: chocolate;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: .75rem;
+    display: block;
+    width: 10vw;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+    transition: background-color 1s;
+}
+
+.page-change:hover{
+    background-color:white ;
+    border: 2px solid chocolate;
+    color:chocolate;
+    
+}
