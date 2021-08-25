@@ -4,8 +4,17 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 2rem;
     padding: 2rem;
+}
 
-
+.link-deco{
+    text-decoration: none;
+    color: white;
+ 
+}
+.link-deco a{
+    text-decoration: none;
+    color: orangered;
+ 
 }
 
 .heading {
