@@ -100,7 +100,7 @@ body {
     font-weight: 900;
     margin: auto;
     text-align: center;
-    
+    width: 80%;
     position: relative;
 }
 
@@ -370,6 +370,7 @@ flex-direction: column;
     flex-direction: row-reverse;
     justify-content: center;
     margin: auto;
+   
 }
 
 .before-after-line:before {
@@ -384,7 +385,7 @@ flex-direction: column;
     font-size: 2rem;
     font-weight: 900;
     margin: auto;
-    
+    width: fit-content;
     
     position: relative;
 }
