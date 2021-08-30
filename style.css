@@ -317,8 +317,8 @@ flex-direction: column;
 .box-item-add {
     position: absolute;
     top: 30%;
-    left: 15%;
-    right: 15%;
+    left: 0;
+    right: 0;
     width: 328px;
     height: fit-content;
     background-color: whitesmoke;
