@@ -143,8 +143,8 @@ body {
 .box-item-add {
     position: absolute;
     top: 30%;
-    left: 15%;
-    right: 15%;
+    left: 0;
+    right: 0;
     width: 450px;
     height: 220px;
     background-color: whitesmoke;
