@@ -105,7 +105,7 @@ body {
 }
 
 .back-opt {
-    padding: 25px;
+    padding: 25px 25px 25px 0;
     /* float: right; */
     font-size: 2rem;
     font-weight: bold;
@@ -118,7 +118,7 @@ body {
     width: 400px;
     border: 2px solid olivedrab;
     border-radius: 0.5rem;
-    margin: 3rem 0 0 0;
+    margin: auto;
     box-shadow: 10px 10px 10px #0a0a0a29;
     text-align: center;
     margin: auto;
@@ -143,8 +143,8 @@ body {
 .box-item-add {
     position: absolute;
     top: 30%;
-    left: 35%;
-    right: 35%;
+    left: 15%;
+    right: 15%;
     width: 450px;
     height: 220px;
     background-color: whitesmoke;
@@ -317,8 +317,8 @@ flex-direction: column;
 .box-item-add {
     position: absolute;
     top: 30%;
-    left: 5%;
-    right: 35%;
+    left: 15%;
+    right: 15%;
     width: 328px;
     height: fit-content;
     background-color: whitesmoke;
@@ -330,7 +330,7 @@ flex-direction: column;
     box-sizing: border-box;
     backdrop-filter: blur(5px);
     text-align: center;
-    margin: 0;
+   
 }
 
 .new-item-input {
@@ -370,6 +370,7 @@ flex-direction: column;
     flex-direction: row-reverse;
     justify-content: center;
     margin: auto;
+    align-items: center;
    
 }
 
@@ -384,7 +385,7 @@ flex-direction: column;
 .triptoparis {
     font-size: 2rem;
     font-weight: 900;
-    margin: auto;
+    margin: 0;
     width: fit-content;
     
     position: relative;
@@ -395,7 +396,7 @@ flex-direction: column;
     width: 300px;
     border: 2px solid olivedrab;
     border-radius: 0.5rem;
-    margin: 3rem 0 0 0;
+    margin: auto;
     box-shadow: 10px 10px 10px #0a0a0a29;
     text-align: center;
     
