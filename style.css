@@ -51,8 +51,8 @@ body {
     padding: 3rem 0rem 4rem 0rem;
     display: flex;
     margin: auto;
-
-    width: 80%;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 }
 
@@ -286,13 +286,14 @@ body {
 flex-direction: column;
     width: 100%;
     align-items: center;
+    
 }
 
 .box {
     height: 80px;
     width: 100%;
-    
-    margin: 0.5rem;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
 .subhead {
