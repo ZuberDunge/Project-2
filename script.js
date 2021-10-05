@@ -11,7 +11,7 @@ const homeText = document.querySelector('.home-text');
 const parentBox = document.querySelector('.boxes');
 const blur = document.querySelector('.blur');
 const containerSingle = document.querySelector(".container");
-const triptoparis =  document.querySelector(".triptoparis");
+const triptoparis = document.querySelector(".triptoparis");
 const singlecardcontainer = document.querySelector('.singlecardcontainer');
 
 let arrayOfObjectsOfCards = [];
@@ -21,6 +21,13 @@ let arrayOfObjectsOfCards = [];
 // }else{
 //   homeText.style.display = "none"
 // }
+
+let ifBlockEmpty = (temp) => {
+  if (temp.innerHTML == "") {
+    homeText.style.display = "block";
+  }
+}
+
 
 
 addNewListPopUpBtn.addEventListener("click", () => {
@@ -61,45 +68,45 @@ function createCard() {
 
     parentBox.appendChild(card);
     const HeadingOfCard = document.createElement("h1");
-    
+
     HeadingOfCard.className = "headings subhead";
     HeadingOfCard.id = element.id;
-    
+
     let cardsHeading = document.createTextNode(element.name);
     HeadingOfCard.appendChild(cardsHeading);
     card.appendChild(HeadingOfCard);
 
     const line = document.createElement("hr");
     card.appendChild(line);
-const headingOpen = document.querySelectorAll(".headings")
+    const headingOpen = document.querySelectorAll(".headings")
     headingOpen.forEach(e => {
-        e.addEventListener("click", (e) => {
-            let selDiv = e.target.parentNode;  
-            let currentDiv = e.target;  
-            console.log(currentDiv.innerText) 
-            
-            triptoparis.innerText = currentDiv.innerText;
+      e.addEventListener("click", (e) => {
+        let selDiv = e.target.parentNode;
+        let currentDiv = e.target;
+        console.log(currentDiv.innerText)
 
-            let singleCard = document.createElement('div');
-            singleCard.className = "single-card";
-            singleCard.className = "single-style";
-            singleCard.appendChild(selDiv);            
-           arrayOfObjectsSingle.unshift(singleCard);            
-            console.log(arrayOfObjectsSingle)           
+        triptoparis.innerText = currentDiv.innerText;
 
-            singlecardcontainer.appendChild(arrayOfObjectsSingle[0]);
-            parentBox.style.display = "none";
-            header.style.display = "none";
-            containerSingle.style.display = "block";
-            
-        })
+        let singleCard = document.createElement('div');
+        singleCard.className = "single-card";
+        singleCard.className = "single-style";
+        singleCard.appendChild(selDiv);
+        arrayOfObjectsSingle.unshift(singleCard);
+        console.log(arrayOfObjectsSingle)
+
+        singlecardcontainer.appendChild(arrayOfObjectsSingle[0]);
+        parentBox.style.display = "none";
+        header.style.display = "none";
+        containerSingle.style.display = "block";
+
+      })
 
     })
 
   }
 
 
-  
+
 
 
 
@@ -127,6 +134,7 @@ const headingOpen = document.querySelectorAll(".headings")
     e.addEventListener("click", (e) => {
       let selDiv = e.target.parentNode;
       selDiv.remove();
+      ifBlockEmpty(parentBox);
     })
   })
 
@@ -143,16 +151,16 @@ const headingOpen = document.querySelectorAll(".headings")
 
 let arrayOfObjectsSingle = [];
 
-  function backToMainList(e) {
-      parentBox.style.display = "flex"; 
-      arrayOfObjectsSingle[0].classList.remove("single-style");
-      parentBox.appendChild(arrayOfObjectsSingle[0]);
-      arrayOfObjectsSingle = [] ;
-      header.style.display = "flex";
+function backToMainList(e) {
+  parentBox.style.display = "flex";
+  arrayOfObjectsSingle[0].classList.remove("single-style");
+  parentBox.appendChild(arrayOfObjectsSingle[0]);
+  arrayOfObjectsSingle = [];
+  header.style.display = "flex";
 
-      containerSingle.style.display = "none";
-  }
-  
+  containerSingle.style.display = "none";
+}
+
 
 
 // function backToMainList(e) {
@@ -174,39 +182,39 @@ let arrayOfObjectsSingle = [];
 
 
 function addingDataIntoCard(temp) {
-  if(inputItem.value == ""){
+  if (inputItem.value == "") {
     alert("Enter Something")
-  }else{
+  } else {
 
 
-  const data = inputItem.value;
-  const dataincard = document.createElement('p');
-   for(let index = 0; index < arrayOfObjectsOfCards.length; index++){
-        const element = arrayOfObjectsOfCards[index];
-        if( element.id == selectedCardId ){
-            console.log(data);
-            dataincard.innerHTML = data;
-            document.getElementById(`${element.id}`).appendChild(dataincard);
-        }
+    const data = inputItem.value;
+    const dataincard = document.createElement('p');
+    for (let index = 0; index < arrayOfObjectsOfCards.length; index++) {
+      const element = arrayOfObjectsOfCards[index];
+      if (element.id == selectedCardId) {
+        console.log(data);
+        dataincard.innerHTML = data;
+        document.getElementById(`${element.id}`).appendChild(dataincard);
+      }
     }
-               // checklist
-                dataincard.classList.add('tasklistitem');
-                const checkBox = document.querySelectorAll(".tasklistitem")
-                checkBox.forEach(e => {
-                  e.addEventListener("click", (e) => {
-                    let selDiv = e.target;
-                    selDiv.style.textDecoration = "line-through";
-                    selDiv.style.color = "red"
-                  })
-                })
+    // checklist
+    dataincard.classList.add('tasklistitem');
+    const checkBox = document.querySelectorAll(".tasklistitem")
+    checkBox.forEach(e => {
+      e.addEventListener("click", (e) => {
+        let selDiv = e.target;
+        selDiv.style.textDecoration = "line-through";
+        selDiv.style.color = "red"
+      })
+    })
 
 
 
-  blur.style.filter = "none";
-  addNewItemPopUp.style.display = "none";
-  parentBox.style.filter = "none";
-  selectedCardId = null;
-              }
+    blur.style.filter = "none";
+    addNewItemPopUp.style.display = "none";
+    parentBox.style.filter = "none";
+    selectedCardId = null;
+  }
 }
 
 // // checklist
@@ -233,14 +241,15 @@ function addingDataIntoCard(temp) {
 addNewListBtn.addEventListener("click", () => {
 
 
-  if(inputList.value == ""){
+  if (inputList.value == "") {
     alert("Enter Something")
-  }else{
-  addCard();
-  parentBox.style.display = "block";
-  addNewListPopUp.style.display = "none";
-  blur.style.filter = "blur(0px)";
-  // noItem.style.display = "none";
-  // document.querySelector(".noItem").style.display = "none";
-  createCard();}
+  } else {
+    addCard();
+    parentBox.style.display = "block";
+    addNewListPopUp.style.display = "none";
+    blur.style.filter = "blur(0px)";
+    // noItem.style.display = "none";
+    // document.querySelector(".noItem").style.display = "none";
+    createCard();
+  }
 })

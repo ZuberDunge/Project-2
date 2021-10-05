@@ -471,4 +471,7 @@ flex-direction: column;
 .aiway{
     margin-top:0;
 }
+.back-text-hide{
+    display: none;
+}
 }
