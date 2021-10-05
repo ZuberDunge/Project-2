@@ -14,7 +14,13 @@ const containerSingle = document.querySelector(".container");
 const triptoparis =  document.querySelector(".triptoparis");
 const singlecardcontainer = document.querySelector('.singlecardcontainer');
 
+let arrayOfObjectsOfCards = [];
 
+// if(arrayOfObjectsOfCards.length==0){
+//   homeText.style.display = "block"
+// }else{
+//   homeText.style.display = "none"
+// }
 
 
 addNewListPopUpBtn.addEventListener("click", () => {
@@ -28,7 +34,7 @@ closePopUp.addEventListener("click", () => {
   blur.style.filter = "none";
 });
 
-let arrayOfObjectsOfCards = [];
+
 
 function addCard(e) {
   // e.preventDefault();
@@ -55,15 +61,16 @@ function createCard() {
 
     parentBox.appendChild(card);
     const HeadingOfCard = document.createElement("h1");
+    
     HeadingOfCard.className = "headings subhead";
     HeadingOfCard.id = element.id;
-
+    
     let cardsHeading = document.createTextNode(element.name);
     HeadingOfCard.appendChild(cardsHeading);
     card.appendChild(HeadingOfCard);
 
-  
-
+    const line = document.createElement("hr");
+    card.appendChild(line);
 const headingOpen = document.querySelectorAll(".headings")
     headingOpen.forEach(e => {
         e.addEventListener("click", (e) => {

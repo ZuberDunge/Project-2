@@ -256,6 +256,15 @@ body {
     font-size: 1.5rem;
     text-align: center;
 }
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 
 .trip-flex-mobile{
     display: flex;
@@ -328,7 +337,6 @@ flex-direction: column;
  display: block;
  
 }
-
 
 
 
