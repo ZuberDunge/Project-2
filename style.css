@@ -3,8 +3,9 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 2rem;
-    padding: 2rem;
+    padding: 0rem;
 }
+
 
 .link-deco{
     text-decoration: none;
@@ -20,7 +21,7 @@ body {
 
 
 .header {
-    padding: 4rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 2rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,16 +49,18 @@ body {
 }
 
 .boxes {
+ 
     padding: 3rem 0rem 4rem 0rem;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
     width: 100%;
+    flex-direction: row;
     justify-content: center;
 }
 
 .box {
-    height: 380px;
+    min-height: 380px;
     width: 250px;
     border: 2px solid orangered;
     border-radius: 0.5rem;
@@ -68,8 +71,8 @@ body {
 
 .subhead {
     text-align: center;
-    color: orangered;
-    font-weight: lighter;
+    color: black;
+    font-weight: bold;
 
 }
 
@@ -82,7 +85,7 @@ body {
 }
 
 .checkbox {
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -249,7 +252,10 @@ body {
     color:chocolate;
     
 }
-
+.tasklistitem{
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 .trip-flex-mobile{
     display: flex;
@@ -257,13 +263,21 @@ body {
     flex-wrap: wrap-reverse;
 }
 
+.aiway{
+    text-align: center; margin-top:1rem;margin-bottom: 0;
+}
+.list-styling{
+    list-style-type: none;
+}
 
-
-
-
-
-
-
+.close{
+    margin-left: 1rem;
+}
+.home-text{
+   font-size: 1.5rem;
+   text-align: center;
+   margin: auto;
+}
 @media screen and (min-width: 320px) and (max-width: 800px) {
 
 
@@ -273,23 +287,55 @@ body {
         padding: 0rem;
     }
 
-.hide-them{
+.display-none{
     display: none;
 }
+.list-styling{
+    list-style-type: none;
+}
 
-
-
+.tasklistitem{
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+}
 .boxes {
     padding: 0rem;
     display: flex;
     margin: auto;
 flex-direction: column;
     width: 100%;
-    align-items: center;
+  row-gap: 0;
     
 }
 
+.boxes i{
+    display: none;
+}
+
+.single-style div{    
+    min-height: 350px;
+    height: 350px;    
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.single-style{
+   margin: auto; 
+}
+.single-style div .tasklistitem{    
+ display: block;
+ 
+}
+
+
+
+
+
 .box {
+    max-height: 80px;
+    min-height: 80px;
     height: 80px;
     width: 100%;
     margin: auto;
@@ -298,8 +344,8 @@ flex-direction: column;
 
 .subhead {
     text-align: left;
-    color: orangered;
-    font-weight: lighter;
+    color: black;
+    font-weight: bold;
     padding-left: 1rem;
 }
 
@@ -360,7 +406,7 @@ flex-direction: column;
     border-radius: 1rem;
     color: white;
     align-items: center;
-    margin: auto;
+    margin: 1rem;
     margin-bottom: 0;
     display: inline-block;
     cursor: pointer;
@@ -414,5 +460,7 @@ flex-direction: column;
 .subhead {
     text-align: center;
 }
-
+.aiway{
+    margin-top:0;
+}
 }
